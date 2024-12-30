@@ -1,0 +1,238 @@
+body, html {
+    background: black;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 55px; /* Ajusta este valor a la altura de tu navbar */
+}
+
+
+.coloriconos
+{
+    color: blue;
+}
+
+.imagen-foto {
+    width: 50%;
+    border-radius: 5%;
+    transition: width 0.5s ease, border-radius 0.5s ease; /* Transición suave */
+}
+
+.imagen-foto:hover {
+    width: 60%;
+    border-radius: 10%; /* Cambia el radio de la esquina para mostrar la animación */
+}
+
+.imagen-foto-bg {
+    background-image: url('img/FOTO.JPEG') !important;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 70vh;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+    text-justify: auto !important;
+    z-index: 3;
+}
+
+.imagen-foto-bg:hover {
+    transform: scale(1.1); 
+    z-index: 10;
+}
+
+.imagen-container {
+    overflow: hidden;
+    padding: 0;
+    margin: 0; 
+    height: 100vh;  
+}
+
+.imagen-Web {
+    background-image: url('img/IMGPROYECTOWEB.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100%; 
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+    cursor: pointer; 
+}
+
+.imagen-Web:hover {
+    transform: scale(1.1); 
+}
+.imagen-Web:hover p {
+    color: blueviolet;
+}
+
+.imagen-WebADJ {
+    background-image: url('img/IMGPROYECTOADJ.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100%; 
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+    cursor: pointer; 
+}
+
+.imagen-WebADJ:hover {
+    transform: scale(1.1); 
+}
+.imagen-WebADJ:hover p {
+    color: blueviolet;
+}
+
+.reducirtexto {
+    text-align: justify !important;
+    z-index: 1;
+}
+
+#video-fondo {
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%; 
+    position: absolute;  
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.text-nombre {
+    display: block; 
+    font-weight: bold;  
+    font-size: 1.5rem;   
+    text-align: center; 
+}
+
+
+.text-proyectw{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;  
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .imagen-foto-bg {
+        height: 100vh;
+    }
+
+    .reducirtexto h2 {
+        font-size: 1rem;
+    }
+    .reducirtexto h6 {
+        font-size: 0.8rem;
+    }
+
+    .reducirtexto span {
+        font-size: 0.9rem;
+    }
+    .text-proyectw
+    {
+        font-size: 1rem;
+    }
+    .text-carrousel
+    {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .imagen-foto-bg {
+        height: 70vh;
+    }
+}
+
+.filtro
+{
+    opacity: 0.6;
+}
+
+.bg-footer {
+    background: #000000;
+    background: -webkit-linear-gradient(to bottom, #000000,#2c3e50); 
+    background: linear-gradient(to bottom, #000000,#2c3e50);
+}
+
+
+.bg-footer h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .bg-footer h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .bg-footer p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .bg-footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .bg-footer p {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .bg-footer a:hover {
+    color: blue !important;  /* Cambio de color al pasar el ratón */
+  }
+  .bg-footer p:hover {
+    color: blue !important;  /* Cambio de color al pasar el ratón */
+  }
+  
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-md-end {
+    text-align: right;
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+  
+  .py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  @media (max-width: 768px) {
+    .bg-footer {
+      padding: 2rem 0;
+    }
+  
+    .col-md-4 {
+      margin-bottom: 1.5rem;
+    }
+
+    .bg-footer a {
+        transition: color 0.3s;
+        font-size: 0.8rem;
+      }
+      .bg-footer p {
+        transition: color 0.3s;
+        font-size: 0.8rem;
+      }
+  }
