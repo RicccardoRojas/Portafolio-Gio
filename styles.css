@@ -144,11 +144,53 @@ html {
     {
         font-size: 0.8rem;
     }
+    .bg-footer {
+        padding: 2rem 0;
+      }
+    
+      .col-md-4 {
+        margin-bottom: 1.5rem;
+      }
+  
+      .bg-footer a {
+          transition: color 0.3s;
+          font-size: 0.8rem;
+        }
+        .bg-footer p {
+          transition: color 0.3s;
+          font-size: 0.8rem;
+        }
+        .textlagos
+        {
+            font-size: 1.3rem !important;
+        }
+        .text-holder
+        {
+            font-size: 0.8rem;
+        }
+        .shadow-img {
+        width: 100% !important;
+        height: 50% !important;
+        margin-right: 8%;
+        }
+        .text-tecnologias h6
+        {
+            font-size: 0.6rem !important;
+        }
+        .text-tecnologias h4
+        {
+            font-size: 0.5rem !important;
+        }
 }
 
 @media (min-width: 1200px) {
     .imagen-foto-bg {
         height: 70vh;
+    }
+    .shadow-img {
+        width: 70% !important;
+        height: 80% !important;
+        margin-right: 8%;
     }
 }
 
@@ -184,19 +226,24 @@ html {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
   }
 
   .bg-footer p {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
   }
   
   .bg-footer a:hover {
     color: blue !important;  /* Cambio de color al pasar el ratón */
+    transform: scale(1.1); 
+    
   }
   .bg-footer p:hover {
     color: blue !important;  /* Cambio de color al pasar el ratón */
+    transform: scale(1.1); 
   }
   
   
@@ -209,8 +256,15 @@ html {
   }
   
   .container {
-    max-width: 1140px;
+    max-width: 90% ;
     margin: auto;
+    margin-top: 8%;
+  }
+
+  .container-2 {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 4%;
   }
   
   .py-5 {
@@ -218,21 +272,108 @@ html {
     padding-bottom: 3rem;
   }
   
-  @media (max-width: 768px) {
-    .bg-footer {
-      padding: 2rem 0;
-    }
-  
-    .col-md-4 {
-      margin-bottom: 1.5rem;
-    }
-
-    .bg-footer a {
-        transition: color 0.3s;
-        font-size: 0.8rem;
-      }
-      .bg-footer p {
-        transition: color 0.3s;
-        font-size: 0.8rem;
-      }
+  .textlagos
+  {
+    font-size: 1.7rem;
   }
+
+  .Resaltar{
+    color: red;
+}
+.botones{
+    background-color: white !important;
+    border: 1px !important;
+    border-color: black !important;
+    color: white !important;
+    font-weight: bold !important;
+    box-shadow: 5px 5px 10px gray !important;
+    /* Para el redondeado */
+    border-radius: 5px !important;
+    margin: 5px !important; 
+}
+
+.custom-container {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+    position: relative;
+}
+.card{
+    width: auto;
+    height: auto;
+    background: rgb(2, 2, 48);
+    box-shadow: 5px 5px 10px rgb(11, 7, 243);
+    border-radius: 5px;
+    margin: 5px; 
+}
+.card-title{
+    margin-left: 30px;
+    padding-top: 15px;
+    color: white
+}
+.card-image{
+    display: flex;
+    justify-content: center;
+}
+.card-image img{
+    width: 75%;
+}
+.sombratexto
+{
+    color: white;
+    text-shadow: 5px 5px 10px rgb(11, 7, 243);
+    text-align: start;
+}
+
+.titulos
+{
+    margin-top: 10%;
+}
+
+.shadow-img {
+    width: 50%;
+    height: 60%;
+    margin-right: 8%;
+    filter: drop-shadow(4px 4px 5px rgba(11, 7, 243));
+    border-radius: 8px;
+}
+
+.text-holder
+{
+    text-align: justify !important;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+}
+.text-holder:hover
+{
+    transform: scale(1.1);
+}
+
+.text-justificar
+{
+    text-align: justify !important;
+}
+
+.text-tecnologias h6
+{
+    font-size: 1rem;
+}
+
+.text-tecnologias h4
+{
+    font-size: 1.3rem;
+}
+
+.img-servidor
+{
+    height: 10vh !important;
+}
+
+.text-tecnologias h6
+{
+    font-size: 1rem;
+}
+  
+  
