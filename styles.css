@@ -331,6 +331,9 @@ html {
 .titulos
 {
     margin-top: 10%;
+    font-size: 2.1rem;
+    color: floralwhite;
+    text-shadow: 5px 5px 10px rgb(11, 7, 243);
 }
 
 .shadow-img {
